@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Holy Grail Layout Demo</title>
+  <style type="text/css">
+    .HolyGrail {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+    header, footer {
+      flex: 1;
+    }
+    .HolyGrail-body {
+      display: flex;
+      flex: 1;
+    }
+    .HolyGrail-content {
+      flex: 1;
+    }
+    .HolyGrail-nav, .HolyGrail-ads {
+      flex: 0 0 12em;
+    }
+    .HolyGrail-nav {
+      order: -1;
+    }
+
+    @media (max-width: 768px) {
+      .HolyGrail-body {
+        flex-direction: column;
+        flex: 1;
+      }
+      .HolyGrail-nav,
+      .HolyGrail-ads,
+      .HolyGrail-content {
+        flex: auto;
+      }
+    }
+
+  </style>
+</head>
+<body class="HolyGrail">
+  <header>Header</header>
+  <div class="HolyGrail-body">
+    <main class="HolyGrail-content">
+      Proin eget tortor risus. Curabitur aliquet quam id dui posuere blandit. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada. Nulla porttitor accumsan tincidunt.
+
+      Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+
+      Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+    </main>
+    <nav class="HolyGrail-nav">Nav Curabitur aliquet quam id dui posuere blandit.</nav>
+    <aside class="HolyGrail-ads">Aside Curabitur aliquet quam id dui posuere blandit.</aside>
+  </div>
+  <footer>Footer</footer>
+</body>
+</html>
